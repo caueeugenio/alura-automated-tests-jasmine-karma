@@ -7,7 +7,7 @@ export class UniqueIdService {
   // Testa se é seguido de letra maiscula ou minuscula e se tem hifen e dps vem qualquer outra coisa
   private validId = /^[A-Za-z]+[\w\-\:\.]*$/;
   public generateUniqueIdWithPrefix(prefix: string): string {
-    if(!prefix) {
+    if(!prefix || !this.validId.test(prefix)) {
       throw Error("Prefix can't be empty");
     }
 

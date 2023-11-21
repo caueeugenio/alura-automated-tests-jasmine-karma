@@ -33,9 +33,11 @@ describe(UniqueIdService.name, () => {
   it(`#${UniqueIdService.prototype.getNumberOfGeneratedUniqueIds.name}
     should throw when called with empty`, () => {
       // Quando temos que testar uma exceção precisamos declarar uma função dentro do expect
-    const emptyValues = [null, undefined, ''];
-    emptyValues.forEach((emptyValue) => {
-      expect(() => service.generateUniqueIdWithPrefix(emptyValue)).toThrow();
+    const emptyValues = [null, undefined, '', '0','1'];
+    emptyValues.forEach(emptyValue => {
+      expect(() => service.generateUniqueIdWithPrefix(emptyValue))
+      .withContext(`Empty value: ${emptyValue}`)
+      .toThrow();
     });
   });
 });
