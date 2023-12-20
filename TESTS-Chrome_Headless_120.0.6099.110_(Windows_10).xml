@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome Headless 120.0.6099.110 (Windows 10)" package="" timestamp="2023-12-20T01:36:53" id="0" hostname="DESKTOP-H409UBL" tests="8" errors="0" failures="0" time="0.051">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/120.0.6099.110 Safari/537.36"/>
+  </properties>
+  <testcase name="UniqueIdService #getNumberOfGeneratedUniqueIds&#xA;    should throw when called with empty" time="0.033" classname="Chrome_Headless_120_0_6099_110_(Windows_10).UniqueIdService"/>
+  <testcase name="UniqueIdService #generateUniqueIdWithPrefix&#xA;    should generate id when called with prefix" time="0.001" classname="Chrome_Headless_120_0_6099_110_(Windows_10).UniqueIdService"/>
+  <testcase name="UniqueIdService #generateUniqueIdWithPrefix&#xA;    should not generate duplicate IDS when called multitple times" time="0" classname="Chrome_Headless_120_0_6099_110_(Windows_10).UniqueIdService"/>
+  <testcase name="UniqueIdService #getNumberOfGeneratedUniqueIds&#xA;    should return the number of generateIds when called" time="0" classname="Chrome_Headless_120_0_6099_110_(Windows_10).UniqueIdService"/>
+  <testcase name="LikeWidgetComponent #like should trigger (@Output liked) when called" time="0.012" classname="Chrome_Headless_120_0_6099_110_(Windows_10).LikeWidgetComponent"/>
+  <testcase name="LikeWidgetComponent should create component" time="0.002" classname="Chrome_Headless_120_0_6099_110_(Windows_10).LikeWidgetComponent"/>
+  <testcase name="LikeWidgetComponent should auto generate ID during ngOnInit when (@Input id) is not assigned" time="0.002" classname="Chrome_Headless_120_0_6099_110_(Windows_10).LikeWidgetComponent"/>
+  <testcase name="LikeWidgetComponent should NOT auto-generate ID during ngOnInit when (@Input id) is assigned" time="0.001" classname="Chrome_Headless_120_0_6099_110_(Windows_10).LikeWidgetComponent"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

@@ -1,1 +1,33 @@
-<p>like-widget works!</p>
+<div class="liked-widget-container" (click)="like()" (keyup.enter)="like()">
+  <fa-icon
+    role="button"
+    tabindex="0"
+    [attr.aria-describedby]="id"
+    size="1x"
+    [icon]="fonts.faThumbsUp"
+  >
+  </fa-icon>
+  <span
+  [attr.id]="id"
+  [attr.aria-label]="likes + ': people liked'"
+  aria-live="true"
+  aria-atomic="true"
+  class="like-counter"
+  >
+    {{ likes }}
+  </span>
+
+  <!--
+    O atributo aria-live é utilizado quando mudamos o conteúdo de algum elemento
+    dinamicamente e queremos que o novo valor seja anunciado através de screen
+    readers. Já o atributo aria-atomic indica para o screen reader se ele deve
+    anunciar apenas o conteúdo que mudou dinamicamente
+    de uma live area ou se deve anunciar todo o conteúdo.
+   -->
+
+   <!--
+    Qual a finalidade do atributo aria-describedby:
+    Permitir que o elemento seja descrito pelo elemento cujo o ID foi atribuído à propriedade aria-describedby.
+   -->
+
+</div>
